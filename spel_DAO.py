@@ -13,4 +13,4 @@ def spel_naar_mongodb(json_spel):
     db = client["Kleurenwiezen"]
     # create a collection
     table = db["Kleurenwiezen_avonden"]
-    db.Kleurenwiezen_spellen.insert_one(json_spel)
+    table.insert_one(json_spel)
